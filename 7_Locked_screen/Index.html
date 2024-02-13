@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+<body>
+    <div id="container">
+        <div class="area-time">
+            <h1 id="timer">08:12:23</h1>
+            <div id="calendar">
+                <p>Fri, 2 February</p>
+            </div>
+        </div>
+        <div class="area-notification">
+            <div class="notication">
+                <h1>No alarm setted</h1>
+            </div>
+        </div>
+        <div class="area-music">
+            <div class="area-title">
+                <div>
+                    <img src="img1.jpg" alt="Nome msc" id="img-song">
+                </div>
+                <div class="title-music">
+                    <h3 style="font-family: 'Courier New', Courier, monospace;"><i class="fas fa-music"></i>Algo Estranho</h3>
+                    <h3 id="titleSong">titulo da Musica</h3>
+                    <p id="singer">Cantor</p>
+                </div>
+                <div class="media-output">
+                    <button>Media output</button> 
+                </div>
+            </div>
+            
+            <div class="control">
+                <button onclick="loveMusic()" id="loveMusic"><i class="fa fa-heart"></i></button>
+                <button onclick="prevsong()" id="prevSong"><i class="fas fa-step-backward"></i></button>
+                <button onclick="justPlay()" id="playSong"><i class="fas fa-play"></i></button>
+                <button onclick="nextsong()" id="nextSong"><i class="fas fa-step-forward"></i></button>
+                <button onclick="repeatSong()" id="repeatSong"><i class="fas fa-repeat"></i></button>                
+            </div>
+            <div class="desenvolver">
+                <span class="currentTime">00:00</span>
+                <input type="range" name="" onchange="songprogress()" id="songProgress" step="1" value="0">
+                <span class="duration">00:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
