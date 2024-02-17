@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+h3{
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+small{
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.fa-heart{
+    color: red;
+}
+.loveMe{
+    height: 440px;
+    width: 300px;
+    cursor: pointer;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: url(img1.jpg) no-repeat center center/cover;
+}
+.loveMe .fa-heart{
+    position: absolute;
+    animation: getBig 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+@keyframes getBig {
+    to{
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+    
+}
